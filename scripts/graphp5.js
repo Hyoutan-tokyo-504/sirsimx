@@ -1,10 +1,4 @@
 // MUST BE IMPORTED AFTER sirsim.js
-// シミュレーション画面描写に関する説明
-// アロー関数が多数定義されている
-// graphSketchという大元のアロー関数があり、その変数に描画される領域が入る
-//その下の関数は描画のpに関する関数setup,reset
-//r,g255はyellow
-//修正完了
 
 let graphSketch = (p) => {
   //====== DRAWING PARAMS ======//
@@ -74,8 +68,6 @@ let graphSketch = (p) => {
      * each possible status. */
     lineDrawer.drawLines = (statusArray) => {
       // reset numberOfBallsInStatus
-      //とりあえずSUSCEの仮置きしてstatusArrayと比較し、当てはまるcaseがあった場合はそれに移行する
-      //getStatusArrayで送られている情報は正しい(statuArrayはsirsim.getStatusArray())
       numberOfBallsInStatus =
         { SUSCEPTIBLE: numberOfBalls, INFECTIOUS: 0, RECOVERED: 0, VACCINATED: 0 ,QUARANTINED: 0}; // PREV was: SUSCEPTIBLE: 0
       // calculate the new numberOfBallsInStatus
