@@ -14,7 +14,7 @@ new parameter  | function
 detection success rate  | the possibility infectious status is detected [0,1]
 interval   | interval until next quarantine is conducted\[100,1000\]
 
-・how interval time used
+・how interval time used  
  in every turn, the next conditions are judged on each element of ballsInfectionTime  
 1.ball.time !== undefined  
 not different from previous  
