@@ -157,5 +157,5 @@ $(function () {
   }));
 });
 
-// disables form submission, to prevent unwanted page updates
+// disables form submission,to prevent unwanted page updates
 $('form').submit(false);
