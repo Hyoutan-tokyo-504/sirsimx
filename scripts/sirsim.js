@@ -47,7 +47,6 @@ let sketch = (p) => {
     2: '#ff0000',
     3: '#00ff00',
     4: '#8888ff',
-    //追加カラー
     5: '#000000'
   }
 
@@ -82,7 +81,6 @@ let sketch = (p) => {
     INFECTIOUS: 2,
     RECOVERED: 3,
     VACCINATED: 4,
-    //追加ステータス
     QUARANTINED: 5
   };
 
